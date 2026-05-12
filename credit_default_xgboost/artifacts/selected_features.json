@@ -1,0 +1,350 @@
+{
+  "selected_features": [
+    "payment_to_income_ratio",
+    "annual_income",
+    "max_pay_delay",
+    "num_late_payments",
+    "num_credit_inquiries_6m",
+    "autopay_enrolled",
+    "customer_service_calls_6m",
+    "min_pay_flag",
+    "num_public_records",
+    "credit_utilization",
+    "num_delinquencies_2yr",
+    "pay_to_bill_ratio",
+    "num_open_accounts",
+    "spend_to_limit_ratio",
+    "bankruptcy_flag",
+    "returned_payment_count",
+    "income_stability_index",
+    "cash_advance_usage_pct"
+  ],
+  "feature_metadata": {
+    "payment_to_income_ratio": {
+      "label": "Payment-to-income ratio",
+      "group": "Capacity",
+      "input_type": "number",
+      "rationale": "Compares repayment behavior with income capacity.",
+      "name": "payment_to_income_ratio",
+      "stats": {
+        "min": 0.0544,
+        "p01": 0.175094,
+        "p05": 0.34168000000000004,
+        "p25": 0.9510749999999999,
+        "median": 2.12635,
+        "p75": 4.558450000000001,
+        "p95": 12.920664999999977,
+        "p99": 25.477673000000028,
+        "max": 113.9649
+      }
+    },
+    "annual_income": {
+      "label": "Annual income",
+      "group": "Capacity",
+      "input_type": "currency",
+      "rationale": "Represents borrower repayment capacity.",
+      "name": "annual_income",
+      "stats": {
+        "min": 8872.0,
+        "p01": 15500.98,
+        "p05": 22389.2,
+        "p25": 37989.5,
+        "median": 54622.0,
+        "p75": 79659.25,
+        "p95": 135615.34999999992,
+        "p99": 196481.8500000004,
+        "max": 462767.0
+      }
+    },
+    "max_pay_delay": {
+      "label": "Worst recent payment delay",
+      "group": "Payment behavior",
+      "input_type": "integer",
+      "rationale": "Captures the most severe recent repayment delay.",
+      "name": "max_pay_delay",
+      "stats": {
+        "min": -1.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 1.0,
+        "median": 3.0,
+        "p75": 4.0,
+        "p95": 7.0,
+        "p99": 8.0,
+        "max": 8.0
+      }
+    },
+    "num_late_payments": {
+      "label": "Number of late payments",
+      "group": "Payment behavior",
+      "input_type": "integer",
+      "rationale": "Counts how often recent payments were late.",
+      "name": "num_late_payments",
+      "stats": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 2.0,
+        "p95": 3.0,
+        "p99": 4.0,
+        "max": 6.0
+      }
+    },
+    "num_credit_inquiries_6m": {
+      "label": "Recent credit inquiries",
+      "group": "Credit seeking",
+      "input_type": "integer",
+      "rationale": "Frequent recent credit searches may indicate liquidity pressure.",
+      "name": "num_credit_inquiries_6m",
+      "stats": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "median": 1.0,
+        "p75": 2.0,
+        "p95": 3.0,
+        "p99": 4.0,
+        "max": 7.0
+      }
+    },
+    "autopay_enrolled": {
+      "label": "Autopay enrolled",
+      "group": "Payment behavior",
+      "input_type": "binary",
+      "rationale": "Autopay can reduce missed-payment risk.",
+      "name": "autopay_enrolled",
+      "stats": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      }
+    },
+    "customer_service_calls_6m": {
+      "label": "Customer service calls in 6 months",
+      "group": "Account behavior",
+      "input_type": "integer",
+      "rationale": "Frequent service contact can indicate account stress or disputes.",
+      "name": "customer_service_calls_6m",
+      "stats": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "median": 1.0,
+        "p75": 2.0,
+        "p95": 3.0,
+        "p99": 4.0,
+        "max": 5.0
+      }
+    },
+    "min_pay_flag": {
+      "label": "Minimum payment flag",
+      "group": "Payment behavior",
+      "input_type": "binary",
+      "rationale": "Indicates reliance on minimum payments.",
+      "name": "min_pay_flag",
+      "stats": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      }
+    },
+    "num_public_records": {
+      "label": "Public records",
+      "group": "Credit quality",
+      "input_type": "integer",
+      "rationale": "Captures public credit events that may indicate elevated risk.",
+      "name": "num_public_records",
+      "stats": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "p95": 1.0,
+        "p99": 2.0,
+        "max": 3.0
+      }
+    },
+    "credit_utilization": {
+      "label": "Credit utilization",
+      "group": "Balance pressure",
+      "input_type": "percent",
+      "rationale": "Shows how much of the available credit line is currently being used.",
+      "name": "credit_utilization",
+      "stats": {
+        "min": 0.001,
+        "p01": 0.041398,
+        "p05": 0.09588000000000002,
+        "p25": 0.2403,
+        "median": 0.379,
+        "p75": 0.5431250000000001,
+        "p95": 0.7488049999999999,
+        "p99": 0.8577330000000007,
+        "max": 0.9547
+      }
+    },
+    "num_delinquencies_2yr": {
+      "label": "Delinquencies in last 2 years",
+      "group": "Credit quality",
+      "input_type": "integer",
+      "rationale": "Counts recent serious repayment issues.",
+      "name": "num_delinquencies_2yr",
+      "stats": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 1.0,
+        "p95": 2.0,
+        "p99": 3.0,
+        "max": 5.0
+      }
+    },
+    "pay_to_bill_ratio": {
+      "label": "Payment-to-bill ratio",
+      "group": "Payment behavior",
+      "input_type": "percent",
+      "rationale": "Compares recent payments with billed amounts.",
+      "name": "pay_to_bill_ratio",
+      "stats": {
+        "min": 0.2329,
+        "p01": 0.376292,
+        "p05": 0.4476,
+        "p25": 0.538575,
+        "median": 0.604,
+        "p75": 0.6642,
+        "p95": 0.7482099999999998,
+        "p99": 0.8011010000000001,
+        "max": 0.8887
+      }
+    },
+    "num_open_accounts": {
+      "label": "Open accounts",
+      "group": "Credit profile",
+      "input_type": "integer",
+      "rationale": "Shows breadth of current credit obligations.",
+      "name": "num_open_accounts",
+      "stats": {
+        "min": 1.0,
+        "p01": 1.0,
+        "p05": 1.0,
+        "p25": 4.0,
+        "median": 8.0,
+        "p75": 11.0,
+        "p95": 14.0,
+        "p99": 14.0,
+        "max": 14.0
+      }
+    },
+    "spend_to_limit_ratio": {
+      "label": "Spend-to-limit ratio",
+      "group": "Balance pressure",
+      "input_type": "number",
+      "rationale": "Compares spending level with the credit limit.",
+      "name": "spend_to_limit_ratio",
+      "stats": {
+        "min": 0.0773,
+        "p01": 0.133899,
+        "p05": 0.166995,
+        "p25": 0.225375,
+        "median": 0.2762,
+        "p75": 0.3333,
+        "p95": 0.4265049999999999,
+        "p99": 0.4954050000000001,
+        "max": 0.6269
+      }
+    },
+    "bankruptcy_flag": {
+      "label": "Bankruptcy flag",
+      "group": "Credit quality",
+      "input_type": "binary",
+      "rationale": "Indicates whether a bankruptcy signal is present.",
+      "name": "bankruptcy_flag",
+      "stats": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "p95": 0.0,
+        "p99": 1.0,
+        "max": 1.0
+      }
+    },
+    "returned_payment_count": {
+      "label": "Returned payment count",
+      "group": "Payment behavior",
+      "input_type": "integer",
+      "rationale": "Counts failed or returned payments.",
+      "name": "returned_payment_count",
+      "stats": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "p95": 2.0,
+        "p99": 3.0,
+        "max": 3.0
+      }
+    },
+    "income_stability_index": {
+      "label": "Income stability index",
+      "group": "Capacity",
+      "input_type": "number",
+      "rationale": "Captures the steadiness of income over time.",
+      "name": "income_stability_index",
+      "stats": {
+        "min": 0.0,
+        "p01": 0.0019,
+        "p05": 0.00909000000000001,
+        "p25": 0.0478,
+        "median": 0.12279999999999999,
+        "p75": 0.3,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      }
+    },
+    "cash_advance_usage_pct": {
+      "label": "Cash advance usage",
+      "group": "Liquidity pressure",
+      "input_type": "percent",
+      "rationale": "Cash advance reliance can indicate short-term liquidity stress.",
+      "name": "cash_advance_usage_pct",
+      "stats": {
+        "min": 0.0001,
+        "p01": 0.0014,
+        "p05": 0.0067,
+        "p25": 0.0353,
+        "median": 0.0832,
+        "p75": 0.1584,
+        "p95": 0.31190999999999985,
+        "p99": 0.443801,
+        "max": 0.7195
+      }
+    }
+  },
+  "correlation_limit": 0.6,
+  "max_features": 18
+}

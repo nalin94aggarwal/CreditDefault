@@ -1,0 +1,9 @@
+feature,label,plot_file,min_grid_value,max_grid_value,pdp_at_min,pdp_at_max,direction
+payment_to_income_ratio,Payment-to-income ratio,reports/pdp/pdp_payment_to_income_ratio.png,0.34208,13.759189999999998,0.26597848534584045,0.8867195844650269,increases risk
+num_late_payments,Number of late payments,reports/pdp/pdp_num_late_payments.png,0.0,5.0,0.4294477105140686,0.5138996839523315,increases risk
+max_pay_delay,Worst recent payment delay,reports/pdp/pdp_max_pay_delay.png,0.0,7.0,0.4142397344112396,0.4819348454475403,increases risk
+annual_income,Annual income,reports/pdp/pdp_annual_income.png,22164.4,133374.79999999996,0.47535401582717896,0.44282788038253784,decreases risk
+pay_to_bill_ratio,Payment-to-bill ratio,reports/pdp/pdp_pay_to_bill_ratio.png,0.43824500000000005,0.7445,0.482371985912323,0.4368428587913513,decreases risk
+autopay_enrolled,Autopay enrolled,reports/pdp/pdp_autopay_enrolled.png,0.0,1.0,0.4705275893211365,0.4460148811340332,decreases risk
+credit_utilization,Credit utilization,reports/pdp/pdp_credit_utilization.png,0.09328499999999999,0.7469299999999999,0.4312532842159271,0.504544734954834,increases risk
+returned_payment_count,Returned payment count,reports/pdp/pdp_returned_payment_count.png,0.0,3.0,0.45086613297462463,0.48057547211647034,increases risk

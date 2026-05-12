@@ -1,0 +1,42 @@
+{
+  "target": "credit_card_default",
+  "train_rows": 7000,
+  "validation_rows": 3000,
+  "validation_size": 0.3,
+  "positive_default_rate_train": 0.29928571428571427,
+  "positive_default_rate_validation": 0.29933333333333334,
+  "primary_measurement_method": "ROC-AUC / Gini",
+  "hyperparameter_search_method": "bayesian",
+  "hyperparameter_search_objective": "maximize validation ROC-AUC",
+  "hyperparameter_search_evaluations": 90,
+  "best_hyperparameters": {
+    "n_estimators": 226,
+    "max_depth": 2,
+    "learning_rate": 0.03569289,
+    "min_child_weight": 6.45174431,
+    "subsample": 0.97155331,
+    "colsample_bytree": 0.96386298,
+    "reg_lambda": 16.98982705,
+    "reg_alpha": 1.84235857,
+    "gamma": 1.58167425
+  },
+  "roc_auc": 0.774645,
+  "gini": 0.54929,
+  "average_precision_pr_auc": 0.672665,
+  "ks_statistic": 0.424232,
+  "log_loss": 0.549963,
+  "classification_threshold": 0.515,
+  "precision_at_threshold": 0.583512,
+  "recall_at_threshold": 0.606904,
+  "f1_at_threshold": 0.594978,
+  "confusion_matrix": [
+    [
+      1713,
+      389
+    ],
+    [
+      353,
+      545
+    ]
+  ]
+}
